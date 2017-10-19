@@ -1,0 +1,9 @@
+<form action="">
+   <h3>{{title}}</h3>
+   <p>{{message}}</p>
+   <label for="name">Name:</label> <input type="text" name="name" id="name"  v-model.trim="formScope.name">
+   <p>{{formScope.name}}</p>
+   <label for="age">Age:</label> <input type="text" name="age" id="age"  v-model="formScope.age">
+   <button type="button" @click="onClick">提交</button>
+   {{formScope}}
+</form>

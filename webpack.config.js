@@ -6,7 +6,6 @@ let webpack = require('webpack'),
     sourcePath = __dirname;
 // ==>
 module.exports = {
-    //sourceMap: true,
     devtool: 'source-map',
     entry: [path.join(sourcePath, 'src/main.ts')],
     output: {
@@ -36,9 +35,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['.ts', '.vue'],
-        // alias: {
-        //     'vue$': path.resolve(__dirname,'node_modules/vue/dist/vue.common.js')
-        // }
+        alias: {
+            'vue$': path.resolve(__dirname,'node_modules/vue/dist/vue.esm.js')
+        }
     },
     plugins: [
         // new webpack.ProvidePlugin({
@@ -47,7 +46,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: path.join(sourcePath, 'src/index.tpl.html'),
             inject: 'body',
-            //favicon: path.join(sourcePath, 'src/favicon.png')
+            favicon: path.join(sourcePath, 'src/favicon.ico')
         }),
         new ExtractTextPlugin({
             filename: 'index.css',

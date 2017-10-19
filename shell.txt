@@ -8,7 +8,8 @@ cnpm install --save-dev vue-class-component
 cnpm install --save-dev vue-template-compiler
 npm install --save @types/node
 cnpm install --save-dev core-js
-
+cnpm install --save vue-router
+cnpm install --save vuex
 
 "ts-loader": "1.2.1",
 "typescript": "2.0.0",

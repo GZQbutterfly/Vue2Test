@@ -1,17 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
 </head>
+
 <body>
   Hello, World!
+  <div id="example">  <p-component></p-component></div>
+
   <div id="app">
-    <my-component></my-component>
-    <MyComponent></MyComponent>
-		<!-- <router-view></router-view> -->
-	</div>
+
+    <!-- <MyComponent></MyComponent> -->
+    <!-- <router-view></router-view> -->
+  </div>
+  <div class="content" id="routerLayout">
+    <router-link to="/" title="点我可跳转demo2">home</router-link>
+    <router-link to="/demo">demo</router-link>
+    <router-link to="/list">list</router-link>
+    <router-link to="/demo2">demo2</router-link>
+    <router-link to="/form">form</router-link>
+    <router-view></router-view>
+  </div>
 </body>
+
 </html>
