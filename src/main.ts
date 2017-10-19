@@ -8,7 +8,6 @@ import {CComponent} from './demo/components/c.component';
 
 
 Vue.use(Vuex);
-//Vue.use(VueForm);
 
 
 Vue.component('p-component', PComponent);
@@ -21,12 +20,4 @@ new Vue({
 new Vue({
   el: '#app',
   render: h => h(MyComponent)
-  // components:{
-  //   'my-component': MyComponent
-  // }
 });
-
-
-export default {
-    module: 'main'
-}

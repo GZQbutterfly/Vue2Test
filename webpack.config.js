@@ -7,7 +7,7 @@ let webpack = require('webpack'),
 // ==>
 module.exports = {
     devtool: 'source-map',
-    entry: [path.join(sourcePath, 'src/main.ts')],
+    entry: [path.join(sourcePath, 'src/index.ts')],
     output: {
         path: path.join(sourcePath, '/dist'),
         filename: '[name].js'
