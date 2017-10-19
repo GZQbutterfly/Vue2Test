@@ -30,4 +30,5 @@ vue 2
 |-- .gitignore                       // git上传需要忽略的文件格式
 |-- README.md                        // 项目说明
 |-- package.json                     // 项目基本信息
+|-- tsconfig.json                     // 编译ts配置文件
 .
