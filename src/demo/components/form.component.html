@@ -1,9 +1,15 @@
-<form action="">
-   <h3>{{title}}</h3>
-   <p>{{message}}</p>
-   <label for="name">Name:</label> <input type="text" name="name" id="name"  v-model.trim="formScope.name">
-   <p>{{formScope.name}}</p>
-   <label for="age">Age:</label> <input type="text" name="age" id="age"  v-model="formScope.age">
-   <button type="button" @click="onClick">提交</button>
-   {{formScope}}
+<!-- <validator  name="aa"> -->
+<form novalidate role="form">
+  <legend class="text-center">Vue-form demo</legend>
+  <h3>{{title}}</h3>
+  <p>{{message}}</p>
+  <label for="name">Name:</label> <input type="text" name="name" id="name" v-model.trim="formScope.name">
+  <!-- v-validate:name="['required']"  -->
+  <p>{{formScope.name}}</p>
+  <label for="age">Age:</label> <input type="text" name="age" id="age" v-model="formScope.age">
+  <!-- v-validate:age="{maxLength:3}" -->
+  <button type="button" @click="onClick">提交</button>
+  <!-- <p>{{$myform}}</p> -->
+  <!-- <p>{{$validation}}</p> -->
 </form>
+<!-- </validator> -->

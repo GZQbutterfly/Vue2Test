@@ -10,20 +10,20 @@
 
 <body>
   Hello, World!
-  <div id="example">  <p-component></p-component></div>
-
-  <div id="app">
-
-    <!-- <MyComponent></MyComponent> -->
-    <!-- <router-view></router-view> -->
+  <div id="example">
+    <p-component></p-component>
   </div>
+  <div id="app">
+  </div>
+  <hr>
   <div class="content" id="routerLayout">
+    <router-view></router-view>
+    <hr>
     <router-link to="/" title="点我可跳转demo2">home</router-link>
     <router-link to="/demo">demo</router-link>
     <router-link to="/list">list</router-link>
     <router-link to="/demo2">demo2</router-link>
     <router-link to="/form">form</router-link>
-    <router-view></router-view>
   </div>
 </body>
 

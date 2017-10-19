@@ -5,23 +5,17 @@ cnpm install --save-dev raw-loader css-loader  style-loader
 cnpm install --save-dev file-loader vue-loader
 cnpm install --save-dev sass sass-loader node-sass
 cnpm install --save-dev vue-class-component
+//cnpm install --save-dev  babel-core babel-loader
 cnpm install --save-dev vue-template-compiler
 npm install --save @types/node
 cnpm install --save-dev core-js
 cnpm install --save vue-router
 cnpm install --save vuex
+cnpm install --save vue-cdd-validator
+
 
 "ts-loader": "1.2.1",
 "typescript": "2.0.0",
   "@types/core-js": "0.9.34",
 
 cnpm install --save vue
-
-
-
-,
-
-"files":[
-  "src/main.ts",
-  "typings/main.d.ts"
-]

@@ -1,11 +1,16 @@
 import './index.scss';
 import Vue from 'vue';
+import Vuex from 'vuex';
 import {MyComponent} from './demo/demo.component';
 import './demo/router/router';
 import {PComponent} from './demo/components/p.component';
 import {CComponent} from './demo/components/c.component';
 
-//console.log(Vue);
+
+Vue.use(Vuex);
+//Vue.use(VueForm);
+
+
 Vue.component('p-component', PComponent);
 Vue.component('c-component', CComponent);
 

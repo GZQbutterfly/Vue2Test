@@ -1,5 +1,6 @@
 import Component from 'vue-class-component';
 import Vue from 'vue';
+import Vuex from 'vuex';
 
 @Component({
     template: require('./form.component.html')
@@ -13,16 +14,15 @@ export class FormComponent extends Vue {
     onClick(){
       //window.alert(this.formScope.name);
     }
-
+    created(){
+        console.log('created', this);
+        //this.message = 'asdad';
+    }
     //钩子
     mounted() {
         console.log('mounted', this);
+        //this.message = 'bbbbbbbb';
     }
-    init(){
-        console.log('init', this);
-    }
-
-
     beforeDestroy(){
         console.log('beforeDestroy', this);
     }
