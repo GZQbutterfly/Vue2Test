@@ -21,9 +21,6 @@ module.exports = {
             use: 'ts-loader'
         },
         {
-            test: /\.js$/,
-            use: 'babel-loader'
-        },{
             test: /\.(html|htm)$/,
             use: 'raw-loader'
         }, {
@@ -57,10 +54,10 @@ module.exports = {
             disable: false,
             allChunks: true,
         }),
-        // new CopyWebpackPlugin([{
-        //     from: path.join(sourcePath, '/src/app/assets'),
-        //     to: path.join(sourcePath, '/dist/app/assets')
-        // }]),
+        new CopyWebpackPlugin([{
+            from: path.join(sourcePath, '/src/static'),
+            to: path.join(sourcePath, '/dist/static')
+        }]),
         //new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('development')

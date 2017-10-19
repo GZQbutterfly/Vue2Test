@@ -1,10 +1,8 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import { FormComponent } from '../components/form.component';
-import { ListComponent } from '../components/list.component';
+import { ListComponent } from '../../app/list/list.component';
 import './router.scss';
-
-
 
 Vue.use(VueRouter);
 
@@ -15,6 +13,9 @@ const routes = [
     name: 'demo',
     component: {
       template: '<div>我是demo</div>'
+    },
+    beforeRouteEnter(){
+      console.log('beforeRouteEnter', this);
     }
   },
   {
@@ -58,5 +59,5 @@ const router = new VueRouter({
   mode: 'history', //可以是去掉#号
   routes
 });
-
-new Vue({ router }).$mount('#routerLayout');
+export default router;
+//new Vue({ router }).$mount('#routerLayout');
