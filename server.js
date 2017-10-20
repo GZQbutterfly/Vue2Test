@@ -2,10 +2,10 @@ let webpack = require('webpack'),
     WebpackDevServer = require('webpack-dev-server'),
     config = require('./webpack.config.js');
 
-// config.entry.unshift(
-//     'webpack-dev-server/client?http://localhost:3000/',
-//     'webpack/hot/only-dev-server'
-// );
+config.entry.unshift(
+    'webpack-dev-server/client?http://localhost:3000/',
+    'webpack/hot/only-dev-server'
+);
 
 // ==>
 new WebpackDevServer(webpack(config), {

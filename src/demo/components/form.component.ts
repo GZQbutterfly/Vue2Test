@@ -7,26 +7,39 @@ import Vuex from 'vuex';
 })
 export class FormComponent extends Vue {
     // 初始数据可以直接声明为实例的属性
-    formScope:object = {name:'小明',age: 23};
-    message: string = 'Hello!';
-    title: string = '我是标题';
-
-    onClick(){
-      //window.alert(this.formScope.name);
+    loginScope: object = {
+        error: {
+            msg: '验证码错误，请重新输入',
+            show: false
+        },
+        form: {
+            phonenumber: '',
+            incode: '',
+            code: ''
+        },
+        btn: {
+            msg: '获取验证码',
+            flag: false
+        }
     }
-    created(){
+
+    onClick() {
+        //window.alert(this.formScope.name);
+    }
+    created() {
         console.log('created', this);
         //this.message = 'asdad';
     }
     //钩子
     mounted() {
-        console.log('mounted', this);
+      let scope:any = Vue;
+        console.log('mounted', this, scope.i18n);
         //this.message = 'bbbbbbbb';
     }
-    beforeDestroy(){
+    beforeDestroy() {
         console.log('beforeDestroy', this);
     }
-    destroyed(){
+    destroyed() {
         console.log('destroyed', this);
     }
 }

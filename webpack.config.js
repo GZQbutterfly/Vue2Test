@@ -23,13 +23,22 @@ module.exports = {
         {
             test: /\.(html|htm)$/,
             use: 'raw-loader'
-        }, {
+        },
+        {
             test: /\.(scss|css)$/,
             use: ExtractTextPlugin.extract({
                 use: ['css-loader', 'sass-loader'],
                 fallback: 'style-loader'
             })
-        }, {
+        },
+        {
+            test: /\.(less|css)$/,
+            use: ExtractTextPlugin.extract({
+                use: ['css-loader', 'less-loader'],
+                fallback: 'style-loader'
+            })
+        },
+        {
             test: /\.(png|svg|jpg|gif)$/,
             use: ['file-loader']
         }]
@@ -58,7 +67,7 @@ module.exports = {
             from: path.join(sourcePath, '/src/static'),
             to: path.join(sourcePath, '/dist/static')
         }]),
-        //new webpack.HotModuleReplacementPlugin(),
+        new webpack.HotModuleReplacementPlugin(),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('development')
         })

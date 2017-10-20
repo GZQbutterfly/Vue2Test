@@ -4,6 +4,7 @@ cnpm install @types/core-js ts-loader typescript --save-dev
 cnpm install --save-dev raw-loader css-loader  style-loader
 cnpm install --save-dev file-loader vue-loader
 cnpm install --save-dev sass sass-loader node-sass
+cnpm install --save-dev less less-loader
 cnpm install --save-dev vue-class-component
 cnpm install --save-dev vue-template-compiler
 cnpm install --save @types/node
@@ -11,4 +12,5 @@ cnpm install --save-dev core-js
 cnpm install --save vue-router
 cnpm install --save vuex
 cnpm install --save vue
+cnpm install --save vuex-i18n
 cnpm install --save axios
