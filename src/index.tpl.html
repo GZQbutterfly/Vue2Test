@@ -1,46 +1,56 @@
 <!DOCTYPE html>
-<html lang="zh-cmn-Hans">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <!-- <link href="./static/lib/weui/css/weui.min.css"> -->
     <title>Document</title>
 </head>
 
 <body ontouchstart>
     <!-- Hello, World! -->
-    <div id="example">
+    <div id="example" class="views">
         <!-- <p-component></p-component> -->
-        <div class="content container" id="routerLayout">
-            <router-view></router-view>
-            <hr>
-            <router-link to="/" title="点我可跳转demo2">home</router-link>
-            <router-link to="/demo">demo</router-link>
-            <router-link to="/list">list</router-link>
-            <router-link to="/demo2">demo2</router-link>
-            <router-link to="/form">form</router-link>
+        <div class="nav-view">
+            <div class="content container nav-view-content" id="routerLayout">
+                <router-view></router-view>
+            </div>
+            <div class="weui-tabbar vw-tab-nav tab-nav">
+                <a href="javascript:;" class="weui-bar__item_on weui-tabbar__item vw-nav-item">
+                    <p class="weui-tabbar__label">
+                        <router-link to="/" title="点我可跳转demo2">home</router-link>
+                    </p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item vw-nav-item">
+                    <p class="weui-tabbar__label">
+                        <router-link to="/demo2">demo2</router-link>
+                    </p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item vw-nav-item">
+                    <p class="weui-tabbar__label">
+                        <router-link to="/list">list</router-link>
+                    </p>
+                </a>
+                <a href="javascript:;" class="weui-tabbar__item vw-nav-item">
+                    <p class="weui-tabbar__label">
+                        <router-link to="/form">form</router-link>
+                    </p>
+                </a>
+            </div>
         </div>
-        <div>
+        <!-- <div>
             <h1>{{ 'My nice title' | translate }}</h1>
             <p>{{ $t('content', {'type': 'nice'}) }}
-        </div>
+        </div> -->
     </div>
 
 
     <div id="app">
-  </div>
+    </div>
     <hr>
-    <!-- <div class="content" id="routerLayout">
-    <router-view></router-view>
-    <hr>
-    <router-link to="/" title="点我可跳转demo2">home</router-link>
-    <router-link to="/demo">demo</router-link>
-    <router-link to="/list">list</router-link>
-    <router-link to="/demo2">demo2</router-link>
-    <router-link to="/form">form</router-link>
-  </div> -->
+
 </body>
 
 </html>

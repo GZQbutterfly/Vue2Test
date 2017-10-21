@@ -25,16 +25,23 @@ module.exports = {
             use: 'raw-loader'
         },
         {
-            test: /\.(scss|css)$/,
+            test: /\.scss$/,
             use: ExtractTextPlugin.extract({
                 use: ['css-loader', 'sass-loader'],
                 fallback: 'style-loader'
             })
         },
         {
-            test: /\.(less|css)$/,
+            test: /\.less$/,
             use: ExtractTextPlugin.extract({
                 use: ['css-loader', 'less-loader'],
+                fallback: 'style-loader'
+            })
+        },
+        {
+            test: /\.css$/,
+            use: ExtractTextPlugin.extract({
+                use: ['css-loader'],
                 fallback: 'style-loader'
             })
         },

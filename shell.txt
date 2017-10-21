@@ -12,5 +12,6 @@ cnpm install --save-dev core-js
 cnpm install --save vue-router
 cnpm install --save vuex
 cnpm install --save vue
+cnpm install --save @types/lodash
 cnpm install --save vuex-i18n
 cnpm install --save axios
