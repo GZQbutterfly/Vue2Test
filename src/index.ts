@@ -1,5 +1,4 @@
 import './main.ts';
-//import './weui/style/weui.less';
-import './weui.css';
+//import './weui.min.css';
 
 console.log('这是入口文件');

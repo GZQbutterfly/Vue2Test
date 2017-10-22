@@ -1,21 +1,21 @@
-import './index.scss';
-import './weui.css';
+// import './index.scss';
+import './weui.min.css';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import {MyComponent} from './demo/demo.component';
 import router from './demo/router/router';
 import {PComponent} from './demo/components/p.component';
 import {CComponent} from './demo/components/c.component';
-//import i18n from './demo/i18n/i18n.compont';
 import vuexI18n from 'vuex-i18n/dist/vuex-i18n.es';
-import Vuwe from 'vuwe';
+
+
 Vue.use(Vuex);
 
 Vue.component('p-component', PComponent);
 Vue.component('c-component', CComponent);
 
-console.log(Vuwe);
-Vue.use(Vuwe);
+
+// Vue.use(Vuwe);
 //
 const store = new Vuex.Store({
     modules: {

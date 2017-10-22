@@ -1,5 +1,29 @@
-<div><ul>
-      <li v-for="(item, index) in listScope">
-        {{index + 1}} Name: {{ item.name }}; Age: {{item.age}}
-      </li>
-    </ul></div>
+<div>
+  <div class="contSingleList">
+        <div class="tabItem">
+            <slot></slot>
+        </div>
+        <v-scroll :on-refresh="onRefresh" :on-infinite="onInfinite" :dataList="scrollData">
+            <ul class="listItem">
+                <li v-for="(item,index) in listdata">
+                    <span>{{ item.date }}</span>
+                    <span>{{ item.portfolio }}</span>
+                    <span
+                    :class="{'state0':(item.state===0),'state1':(item.state==1),state2:(item.state===2)}">
+                        {{ item.drop }}
+                    </span>
+                </li>
+            </ul>
+        </v-scroll>
+    </div>
+    <!-- <div id="pull-down" class="pull-down">
+        <div class="pull-down-content">
+            松手加载更多内容
+        </div>
+    </div>
+    <ul>
+        <li v-for="(item, index) in listScope">
+            {{index + 1}} Name: {{ item.name }}; Age: {{item.age}}
+        </li>
+    </ul> -->
+</div>

@@ -1,0 +1,24 @@
+<div class="yo-scroll"
+     :class="{'down':(state===0),'up':(state==1),refresh:(state===2),touch:touching}"
+     @touchstart="touchStart($event)"
+     @touchmove="touchMove($event)"
+     @touchend="touchEnd($event)">
+        <section class="inner" :style="{ transform: 'translate3d(0, ' + top + 'px, 0)' }">
+            <header class="pull-refresh">
+                <slot name="pull-refresh">
+                    <span class="down-tip">下拉更新</span>
+                    <span class="up-tip">松开刷新数据</span>
+                    <span class="refresh-tip">加载中……</span>
+                </slot>
+            </header>
+            <slot>
+            </slot>
+            <footer class="load-more">
+                <slot name="load-more">
+                    <span v-show="downFlag === false">上啦加载更多</span>
+                    <span v-show="downFlag === true">加载中……</span>
+                </slot>
+            </footer>
+            <div class="nullData" v-show="dataList.noFlag">暂无更多数据</div>
+        </section>
+    </div>

@@ -5,7 +5,12 @@ let webpack = require('webpack'),
     CopyWebpackPlugin = require('copy-webpack-plugin'),
     sourcePath = __dirname;
 // ==>
-module.exports = {
+//
+const vuxLoader = require('vux-loader')
+
+
+// 原来的 module.exports 代码赋值给变量 webpackConfig，
+let config = {
     devtool: 'source-map',
     entry: [path.join(sourcePath, 'src/index.ts')],
     output: {
@@ -57,9 +62,9 @@ module.exports = {
         }
     },
     plugins: [
-        // new webpack.ProvidePlugin({
-        //     Vue: "vue/dist/vue.common.js"
-        // }),
+        new webpack.ProvidePlugin({
+            mui: "src/muui/mui.min.js"
+        }),
         new HtmlWebpackPlugin({
             template: path.join(sourcePath, 'src/index.tpl.html'),
             inject: 'body',
@@ -80,3 +85,7 @@ module.exports = {
         })
     ]
 };
+
+//即将原来的module.exports 改为 const webpackConfig
+module.exports = vuxLoader.merge(config, { plugins: ['vux-ui'] })
+//module.exports = config;
