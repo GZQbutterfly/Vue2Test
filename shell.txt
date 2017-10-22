@@ -17,4 +17,4 @@ cnpm install --save vuex-i18n
 cnpm install --save axios
 
 
- cnpm install vum --save
+ cnpm install vuwe --save

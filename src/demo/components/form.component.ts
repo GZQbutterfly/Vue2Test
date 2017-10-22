@@ -93,7 +93,7 @@ export class FormComponent extends Vue {
     //钩子
     mounted() {
         let scope: any = Vue;
-        console.log('mounted', this, scope.i18n);
+        console.log('mounted', this, scope.i18n, (<any>this).$dialog);
         //this.message = 'bbbbbbbb';
     }
     destroyed() {
@@ -107,5 +107,19 @@ export class FormComponent extends Vue {
             return false;
         }
         return true;
+    }
+    dialogObj = {
+        title: 'PPAP',
+        content: 'I have a pen, I have an apple. Ugh! Apple pen!',
+        assistBtn: '',
+        mainBtn: 'Ugh!',
+        mainFn() {
+            console.log('Ugh~!')
+        }
+    };
+    dialog() {
+        console.log('dialog');
+        const dialogObj = this.dialogObj;
+          (<any>this).$dialog({ dialogObj });
     }
 }

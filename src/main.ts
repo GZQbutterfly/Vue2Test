@@ -1,5 +1,4 @@
-// import './index.scss';
-import './weui.min.css';
+import './index.scss';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import {MyComponent} from './demo/demo.component';
@@ -9,13 +8,19 @@ import {CComponent} from './demo/components/c.component';
 import vuexI18n from 'vuex-i18n/dist/vuex-i18n.es';
 
 
+// import Vuwe from 'vuwe';
+// Vue.use(Vuwe);
+
+
+
+
 Vue.use(Vuex);
 
 Vue.component('p-component', PComponent);
 Vue.component('c-component', CComponent);
 
 
-// Vue.use(Vuwe);
+
 //
 const store = new Vuex.Store({
     modules: {

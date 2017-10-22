@@ -12,7 +12,9 @@ const vuxLoader = require('vux-loader')
 // 原来的 module.exports 代码赋值给变量 webpackConfig，
 let config = {
     devtool: 'source-map',
-    entry: [path.join(sourcePath, 'src/index.ts')],
+    entry: [
+      path.join(sourcePath, 'src/index.ts')
+    ],
     output: {
         path: path.join(sourcePath, '/dist'),
         filename: '[name].js'
@@ -62,9 +64,9 @@ let config = {
         }
     },
     plugins: [
-        new webpack.ProvidePlugin({
-            mui: "src/muui/mui.min.js"
-        }),
+        // new webpack.ProvidePlugin({
+        //     mui: "src/mui/mui.min.js"
+        // }),
         new HtmlWebpackPlugin({
             template: path.join(sourcePath, 'src/index.tpl.html'),
             inject: 'body',

@@ -32,3 +32,7 @@ vue 2
 |-- package.json                     // 项目基本信息
 |-- tsconfig.json                     // 编译ts配置文件
 .
+
+// css 框架 weui  ;  
+// js组件框架自定义 mint-ui: http://mint-ui.github.io/docs/#/!/zh-cn
+                  mui:
