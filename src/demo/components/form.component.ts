@@ -69,6 +69,8 @@ export class FormComponent extends Vue {
         if (form.phone.code === form.code.value) {
             form.submit.disabled = false;
             form.error.show = false;
+            // submitting
+            this.$router.push('/');
         } else {
             form.submit.disabled = true;
             //form.error.msg = false;
