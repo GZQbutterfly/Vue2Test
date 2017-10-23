@@ -16,12 +16,4 @@
         float: right;
         display: inline-block;
     }
-
-    .wybc-group {
-      @wybc-label;
-      @wybc-input;
-      @wybc-button;
-    }
-
-    .wybc-group_code {}
 }

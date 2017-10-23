@@ -1,16 +1,16 @@
-// #routerLayout{
-//   a{
-//     margin: 0 3px;
-//     text-decoration: none;
-//     color: blue;
-//
-//     &:hover{
-//       text-decoration: underline;
-//       color: red;
-//     }
-//     &:active{
-//       color: green;
-//     }
-//
-//   }
-// }
+#routerLayout{
+  a{
+    margin: 0 3px;
+    text-decoration: none;
+
+
+    &:hover{
+      text-decoration: underline;
+
+    }
+    &:active{
+
+    }
+
+  }
+}

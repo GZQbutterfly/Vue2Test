@@ -18,3 +18,11 @@ cnpm install --save axios
 
 
  cnpm install vuwe --save
+
+
+  cnpm install vuwe --save
+
+   cnpm install postcss-pxtorem --save-dev
+   cnpm install postcss-px2rem --save-dev
+   cnpm install postcss-loader --save-dev
+   cnpm install autoprefixer --save-dev
