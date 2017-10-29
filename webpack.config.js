@@ -67,11 +67,11 @@ let config = {
         // new webpack.ProvidePlugin({
         //     mui: "src/mui/mui.min.js"
         // }),
-        new webpack.optimize.UglifyJsPlugin({
-            compressor: {
-                warnings: false
-            }
-        }),
+        // new webpack.optimize.UglifyJsPlugin({
+        //     compressor: {
+        //         warnings: false
+        //     }
+        // }),
         // new webpack.LoaderOptionsPlugin({
         //     // test: /\.xxx$/, // may apply this only for some modules
         //     // postcss平台

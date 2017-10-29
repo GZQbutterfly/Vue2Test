@@ -32,6 +32,134 @@
             <p>{{form.phone.code}}</p>
         </div>
     </div>
+    <div v-if="" class="">
+        <!-- error tip -->
+        <div class="tip-error" v-if="form.error.show">{{form.error.msg}}</div>
+        <!-- 登录body -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell ">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入手机号" v-model="form.phone.value" @blur="pohoneBlur()">
+                </div>
+                <div class="weui-cell__ft">
+                    <button class="weui-btn weui-btn_primary weui-btn_mini" :class="{'weui-btn_disabled': form.btn.disabled}" :disabled="form.btn.disabled" @click="getCode()">{{form.btn.msg}}</button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入验证码" v-model="form.code.value" @blur="codeBlur()" maxlength="6">
+                </div>
+            </div>
+
+            <div class="weui-cells__tips">未注册|手机登录自动创建账号</div>
+
+            <div class="weui-cell">
+                <button type="button" class="weui-btn  weui-btn_primary" :class="{'weui-btn_disabled': form.submit.disabled}" @click="doSubmit()" :disabled="form.submit.disabled">登录</button>
+            </div>
+            <div class="weui-cells__tips">登录即同意 <span>《无忧本草》</span></div>
+            <p>{{form.phone.code}}</p>
+        </div>
+    </div>
+    <div v-if="" class="">
+        <!-- error tip -->
+        <div class="tip-error" v-if="form.error.show">{{form.error.msg}}</div>
+        <!-- 登录body -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell ">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入手机号" v-model="form.phone.value" @blur="pohoneBlur()">
+                </div>
+                <div class="weui-cell__ft">
+                    <button class="weui-btn weui-btn_primary weui-btn_mini" :class="{'weui-btn_disabled': form.btn.disabled}" :disabled="form.btn.disabled" @click="getCode()">{{form.btn.msg}}</button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入验证码" v-model="form.code.value" @blur="codeBlur()" maxlength="6">
+                </div>
+            </div>
+
+            <div class="weui-cells__tips">未注册|手机登录自动创建账号</div>
+
+            <div class="weui-cell">
+                <button type="button" class="weui-btn  weui-btn_primary" :class="{'weui-btn_disabled': form.submit.disabled}" @click="doSubmit()" :disabled="form.submit.disabled">登录</button>
+            </div>
+            <div class="weui-cells__tips">登录即同意 <span>《无忧本草》</span></div>
+            <p>{{form.phone.code}}</p>
+        </div>
+    </div>
+    <div v-if="" class="">
+        <!-- error tip -->
+        <div class="tip-error" v-if="form.error.show">{{form.error.msg}}</div>
+        <!-- 登录body -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell ">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入手机号" v-model="form.phone.value" @blur="pohoneBlur()">
+                </div>
+                <div class="weui-cell__ft">
+                    <button class="weui-btn weui-btn_primary weui-btn_mini" :class="{'weui-btn_disabled': form.btn.disabled}" :disabled="form.btn.disabled" @click="getCode()">{{form.btn.msg}}</button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入验证码" v-model="form.code.value" @blur="codeBlur()" maxlength="6">
+                </div>
+            </div>
+
+            <div class="weui-cells__tips">未注册|手机登录自动创建账号</div>
+
+            <div class="weui-cell">
+                <button type="button" class="weui-btn  weui-btn_primary" :class="{'weui-btn_disabled': form.submit.disabled}" @click="doSubmit()" :disabled="form.submit.disabled">登录</button>
+            </div>
+            <div class="weui-cells__tips">登录即同意 <span>《无忧本草》</span></div>
+            <p>{{form.phone.code}}</p>
+        </div>
+    </div>
+    <div v-if="" class="">
+        <!-- error tip -->
+        <div class="tip-error" v-if="form.error.show">{{form.error.msg}}</div>
+        <!-- 登录body -->
+        <div class="weui-cells weui-cells_form">
+            <div class="weui-cell ">
+                <div class="weui-cell__hd">
+                    <label class="weui-label">手机号</label>
+                </div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入手机号" v-model="form.phone.value" @blur="pohoneBlur()">
+                </div>
+                <div class="weui-cell__ft">
+                    <button class="weui-btn weui-btn_primary weui-btn_mini" :class="{'weui-btn_disabled': form.btn.disabled}" :disabled="form.btn.disabled" @click="getCode()">{{form.btn.msg}}</button>
+                </div>
+            </div>
+            <div class="weui-cell">
+                <div class="weui-cell__hd"><label class="weui-label">验证码</label></div>
+                <div class="weui-cell__bd">
+                    <input class="weui-input" type="tel" placeholder="请输入验证码" v-model="form.code.value" @blur="codeBlur()" maxlength="6">
+                </div>
+            </div>
+
+            <div class="weui-cells__tips">未注册|手机登录自动创建账号</div>
+
+            <div class="weui-cell">
+                <button type="button" class="weui-btn  weui-btn_primary" :class="{'weui-btn_disabled': form.submit.disabled}" @click="doSubmit()" :disabled="form.submit.disabled">登录</button>
+            </div>
+            <div class="weui-cells__tips">登录即同意 <span>《无忧本草》</span></div>
+            <p>{{form.phone.code}}</p>
+        </div>
+    </div>
     <!-- 快捷登录 -->
     <div v-if="">
         <!-- -->

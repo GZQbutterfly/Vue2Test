@@ -3,7 +3,7 @@
         "outDir": "dist",
         "rootDir": ".",
         "module": "commonjs",
-        "target": "es5",
+        "target": "es6",
         "moduleResolution": "node",
         "sourceMap": true,
         "emitDecoratorMetadata": true,

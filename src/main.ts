@@ -2,22 +2,16 @@ import './index.scss';
 import Vue from 'vue';
 import Vuex from 'vuex';
 import {MyComponent} from './demo/demo.component';
-import router from './demo/router/router';
-import {PComponent} from './demo/components/p.component';
-import {CComponent} from './demo/components/c.component';
+import router from './app.router';
 import vuexI18n from 'vuex-i18n/dist/vuex-i18n.es';
-
-
-// import Vuwe from 'vuwe';
-// Vue.use(Vuwe);
-
-
-
+import VueScroller from 'vue-scroller'
+  Vue.use(VueScroller);
 
 Vue.use(Vuex);
 
-Vue.component('p-component', PComponent);
-Vue.component('c-component', CComponent);
+console.log(VueScroller);
+
+
 
 
 
@@ -43,7 +37,7 @@ o.i18n.add('de', translationsDe);
 o.i18n.set('de');
 
 let vm:any = new Vue({
-  el: '#example',
+  el: '#app',
   store,
   router
 });

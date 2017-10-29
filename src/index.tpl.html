@@ -1,56 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="font-size:100px">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <link href="./static/lib/weui/css/weui.min.css" rel="stylesheet">
-    <title>Document</title>
-    <!-- <link href="static/lib/mui/css/mui.min.css" > -->
+    <title>web移动端</title>
 </head>
 
 <body ontouchstart>
-    <!-- Hello, World! -->
-    <div id="example" class="views">
-        <!-- <p-component></p-component> -->
-        <div class="nav-view">
-            <div class="content container nav-view-content" id="routerLayout">
-                <router-view></router-view>
-            </div>
-            <div class="weui-tabbar vw-tab-nav tab-nav">
-                <a href="javascript:;" class="weui-bar__item_on weui-tabbar__item vw-nav-item">
-                    <p class="weui-tabbar__label">
-                        <router-link to="/" title="点我可跳转demo2">home</router-link>
-                    </p>
-                </a>
-                <a href="javascript:;" class="weui-tabbar__item vw-nav-item">
-                    <p class="weui-tabbar__label">
-                        <router-link to="/demo2">demo2</router-link>
-                    </p>
-                </a>
-                <a href="javascript:;" class="weui-tabbar__item vw-nav-item">
-                    <p class="weui-tabbar__label">
-                        <router-link to="/list">list</router-link>
-                    </p>
-                </a>
-                <a href="javascript:;" class="weui-tabbar__item vw-nav-item">
-                    <p class="weui-tabbar__label">
-                        <router-link to="/form">form</router-link>
-                    </p>
-                </a>
-            </div>
-        </div>
-        <!-- <div>
-            <h1>{{ 'My nice title' | translate }}</h1>
-            <p>{{ $t('content', {'type': 'nice'}) }}
-        </div> -->
-    </div>
-
-
     <div id="app">
+        <div class="views">
+            <router-view></router-view>
+
+        </div>
     </div>
-    <hr>
-    <!-- <script src="./static/lib/mui/mui.min.js"></script> -->
 </body>
 
 </html>

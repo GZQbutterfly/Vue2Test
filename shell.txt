@@ -26,3 +26,7 @@ cnpm install --save axios
    cnpm install postcss-px2rem --save-dev
    cnpm install postcss-loader --save-dev
    cnpm install autoprefixer --save-dev
+
+cnpm install vue-pull-to --save
+ cnpm install vue-scroller --save
+ cnpm install  better-scroll --save

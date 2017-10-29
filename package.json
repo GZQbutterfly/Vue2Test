@@ -20,9 +20,12 @@
   "dependencies": {
     "@types/lodash": "^4.14.78",
     "axios": "^0.16.2",
+    "better-scroll": "^1.3.1",
     "vue": "^2.5.2",
     "vue-i18n": "^7.3.2",
+    "vue-pull-to": "^0.1.5",
     "vue-router": "^3.0.1",
+    "vue-scroller": "^2.2.4",
     "vuex": "^3.0.0",
     "vuex-i18n": "^1.7.0",
     "vum": "^2.0.0-rc.2",
