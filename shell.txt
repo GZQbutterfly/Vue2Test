@@ -15,12 +15,13 @@ cnpm install --save vue
 cnpm install --save @types/lodash
 cnpm install --save vuex-i18n
 cnpm install --save axios
+cnpm install --save vue-validator
 
 
- cnpm install vuwe --save
 
+ cnpm install vue-form --save
+ cnpm install vconsole --save
 
-  cnpm install vuwe --save
 
    cnpm install postcss-pxtorem --save-dev
    cnpm install postcss-px2rem --save-dev

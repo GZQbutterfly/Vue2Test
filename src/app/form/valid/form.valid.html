@@ -1,0 +1,60 @@
+<div>
+
+    <vue-form class="weui-cells_form weui-cells" :state="formstate" @submit.prevent="onSubmit">
+        <validate class="weui-cell" tag="div">
+            <div class="weui-cell__hd">
+                <label class="weui-label">QQ2</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="tel" placeholder="输入QQ号码" required v-model="model.name" name="name">
+            </div>
+
+        </validate>
+        <field-messages name="name" show="$submitted">
+            <div slot="required" v-show="formstate.name">
+                Name is a required field</div>
+        </field-messages>
+        <button type="submit">Submit</button>
+    </vue-form>
+    <pre>{{formstate}}</pre>
+
+
+    <div class="weui-cells_form weui-cells">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">Name</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="tel" placeholder="输入QQ号码" name="username">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- <vue-form :state="formstate" @submit.prevent="onSubmit">
+        <validate tag="label">
+            <span>Name *</span>
+            <input v-model="model.name" required name="name" />
+
+            <field-messages name="name">
+                <div>Success!</div>
+                <div slot="required">Name is a required field</div>
+            </field-messages>
+        </validate> -->
+
+    <!-- <validate tag="label">
+            <span>Email</span>
+            <input v-model="model.email" name="email" type="email" required />
+
+            <field-messages name="email">
+                <div slot="required">Email is a required field</div>
+                <div slot="email">Email is not valid</div>
+            </field-messages>
+        </validate> -->
+
+    <!-- <button type="submit">Submit</button> -->
+    <!-- </vue-form> -->
+
+
+</div>

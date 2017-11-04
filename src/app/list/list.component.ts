@@ -2,9 +2,7 @@ import Component from 'vue-class-component';
 import Vue from 'vue';
 import listService from './list.component.service';
 import {PullrefreshComponent} from './pullrefresh/pullrefresh.component';
-import BScroll from 'better-scroll/dist/bscroll';
 
-console.log('1111111111', BScroll);
 //import './list.component.scss';
 
 @Component({

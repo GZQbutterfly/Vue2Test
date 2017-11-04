@@ -1,8 +1,7 @@
-import Vue from 'vue';
 import VueRouter from 'vue-router';
 import {Layout} from './app/layout/layout';
 import { ListComponent } from './app/list/list.component';
-Vue.use(VueRouter);
+import {FromValid} from './app/form/valid/form.valid';
 
 const routes = [
   {
@@ -14,6 +13,11 @@ const routes = [
     path: '/list',
     name: 'list',
     component: ListComponent
+  },
+  {
+    path: '/formValid',
+    name: 'valid',
+    component: FromValid
   }
 ];
 // 接着创建路由实例
