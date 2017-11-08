@@ -18,7 +18,7 @@ cnpm install --save axios
 cnpm install --save vue-validator
 
 
-
+cnpm install --save vue2-animate
  cnpm install vue-form --save
  cnpm install vconsole --save
 
@@ -30,4 +30,4 @@ cnpm install --save vue-validator
 
 cnpm install vue-pull-to --save
  cnpm install vue-scroller --save
- cnpm install  better-scroll --save
+ cnpm install vue-awesome-swiper --save

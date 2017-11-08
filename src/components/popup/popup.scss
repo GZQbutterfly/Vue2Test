@@ -1,0 +1,40 @@
+.popup-layout {
+    font-size: 18px;
+    box-sizing: border-box;
+
+    .popup-mode {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        background-color: #ccc;
+        opacity: 0.5;
+        z-index: 5050;
+    }
+
+    .popup-container {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        top: 0;
+        z-index: 6000;
+        background-color: #fff;
+
+        .swiper-container{
+          height: inherit;
+        }
+        .popup-content {
+            height: auto;
+        }
+    }
+}
+
+.not-scoller-y {
+    overflow-y: hidden;
+}
+
+.scoller-y {
+    overflow-y: inherit;
+}

@@ -7,17 +7,23 @@ import './form.valid.scss';
     template: require('./form.valid.html')
 })
 export class FromValid extends Vue {
+    show = true;
     username = '';
     formstate = {};
-    myform={};
+    myform = {};
     model = {
         name: '',
         email: 'invalid-email'
     };
     mounted() {
-        console.log('我在马路边捡到一分钱');
+      let _popup = this.$store.state.$popup;
+       let result = _popup();
+        console.log('我在马路边捡到一分钱', result);
     }
     onSubmit(...args) {
         console.log(...args);
+    }
+    doShow() {
+        this.show = !this.show;
     }
 }

@@ -1,5 +1,10 @@
 <div>
-
+  <transition
+  name="fadeDown" 
+  >
+    <p v-if="show">hello</p>
+  </transition>
+  <button type="button" name="button" @click="doShow">切换</button>
     <vue-form class="weui-cells_form weui-cells" :state="formstate" @submit.prevent="onSubmit">
         <validate class="weui-cell" tag="div">
             <div class="weui-cell__hd">
