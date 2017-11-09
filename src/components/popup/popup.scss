@@ -30,11 +30,15 @@
         }
     }
 }
+/* 子元素 水平*/
+.layout-horizontal{
+
+}
+/* 子元素 垂直*/
+.layout-vertical{
+
+}
 
 .not-scoller-y {
     overflow-y: hidden;
-}
-
-.scoller-y {
-    overflow-y: inherit;
 }
