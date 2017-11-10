@@ -40,7 +40,7 @@ export default (options?: Config) => {
                 name: 'dialog-popup'
             }
         },
-        template: '<div>{{name}}<dialog-popup></dialog-popup></div>',
+        template: '<div><dialog-popup></dialog-popup></div>',
         components: {
             'dialog-popup': Popup
         }

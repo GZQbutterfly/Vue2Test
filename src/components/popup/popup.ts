@@ -2,17 +2,13 @@ import Component from 'vue-class-component';
 import Vue from 'vue';
 import './popup.scss';
 
+const Swiper = require('../../assets/swiper/swiper.js');
 
 @Component({
-    template: require('./popup.html'),
-    computed: {
-        swiper() {
-            return this.$refs.mySwiper.swiper;
-        }
-    }
+    template: require('./popup.html')
 })
 export class Popup extends Vue {
-    notNextTick = true;
+    classContainer = '.swiper-ui';
     swiper: any;
     data() {
         return this.popupInit();
@@ -21,6 +17,17 @@ export class Popup extends Vue {
         console.log(this.swiper);
         let _self: any = this;
         this.setHTMLScollerYHidden(true);
+
+        this.$nextTick(()=>{
+           _self.swiper = new Swiper(_self.classContainer,{
+             scrollbar: '.swiper-scrollbar',
+             direction: 'vertical',
+             slidesPerView: 'auto',
+             mousewheelControl: true,
+             freeMode: true
+           });
+
+        });
     }
     setHTMLScollerYHidden(falg) {
         let _htmlDom = document.querySelector('html');
@@ -31,22 +38,23 @@ export class Popup extends Vue {
         }
     }
     popupInit(){
+      let width = 300;
+      let height = 400;
+      let _bH = document.body.clientHeight;
+      let _bW = document.body.clientWidth;
       return {
           popupContainerStyle: {
-            width: '300px',
-            height: '400px',
+            width: width + 'px',
+            height: height+ 'px',
+
           },
           popupBodyStyle:{
             height: '300px'
-          },
-          swiperOption: {
-              scrollbar: '.swiper-scrollbar',
-              direction: 'vertical',
-              slidesPerView: 'auto',
-              mousewheelControl: true,
-              freeMode: true
           }
       };
+    }
+    algin(){
+      
     }
 
 }

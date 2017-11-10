@@ -2,6 +2,7 @@ import './main.ts';
 
 import './weui.min.css';
 import 'vue2-animate/dist/vue2-animate.min.css';
+import './assets/swiper/swiper.css';
 import './index.scss';
 
 
