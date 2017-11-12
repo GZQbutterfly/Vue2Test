@@ -22,21 +22,51 @@
         z-index: 6000;
         background-color: #fff;
 
-        .swiper-container{
-          height: inherit;
+        .swiper-container {
+            height: inherit;
         }
+
         .popup-content {
-            height: auto;
+             height: 100%;
         }
+    }
+
+    .popup-header {
+        padding: 10px 0;
+    }
+
+    .popup-body {
+        padding-left: 15px;
+        // padding-right: 15px;
+        word-wrap: break-word;
+        word-break: break-all;
+        color: #999;
+        font-size: 15px;
+        height: 55%;
+    }
+    .popup-footer{
+      background-color: #fff;
+      display: flex;
+      border-top: 1px solid #d5d5d6;
     }
 }
 /* 子元素 水平*/
-.layout-horizontal{
+.layout-horizontal {
+    .popup-header_hd {
+        text-align: left;
+    }
 
+    .popup-header_bd {
+        text-align: left;
+    }
+
+    .popup-header_ft {
+        text-align: right;
+    }
 }
 /* 子元素 垂直*/
-.layout-vertical{
-
+.layout-vertical {
+    text-align: center;
 }
 
 .not-scoller-y {

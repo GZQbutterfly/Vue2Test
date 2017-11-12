@@ -17,13 +17,17 @@ import {get, set, merge} from 'lodash';
 export default (options?: Config) => {
     let _options: Config = {
         title: '',
-        close: true,
+        close: false,
         closeBefore: () => { },
         closeAfter: () => { },
         mode: true,
         content: '',
         components: {},
-        algin: 'center'
+        algin: 'center',
+        direction: 'v',
+        resize(){
+
+        }
     };
 
 
@@ -37,10 +41,11 @@ export default (options?: Config) => {
         el: _newDiv,
         data() {
             return {
-                name: 'dialog-popup'
+                name: 'dialog-popup',
+                options: _options
             }
         },
-        template: '<div><dialog-popup></dialog-popup></div>',
+        template: '<div><dialog-popup :options="options"></dialog-popup></div>',
         components: {
             'dialog-popup': Popup
         }

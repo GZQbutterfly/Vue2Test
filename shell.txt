@@ -28,6 +28,8 @@ cnpm install --save vue2-animate
    cnpm install postcss-loader --save-dev
    cnpm install autoprefixer --save-dev
 
-cnpm install vue-pull-to --save
+
  cnpm install vue-scroller --save
  cnpm install vue-awesome-swiper --save
+
+cnpm install --save vue-resize
