@@ -13,9 +13,11 @@ export abstract class BaseVue extends Vue {
         console.debug('BaseVue ...', _className);
     }
 
-    abstract mounted();
+    mounted() {
 
-    private getClassName(classStr){
+    }
+
+    private getClassName(classStr) {
         return classStr.match(/class\s+([\w\d$_]+)s*/)[1];
     }
 }
