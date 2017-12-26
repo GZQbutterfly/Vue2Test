@@ -2,9 +2,11 @@ import Component from 'vue-class-component';
 import Vue from 'vue';
 import {merge} from 'lodash';
 
-import './popup.scss';
+
 
 const Swiper = require('../../assets/swiper/swiper.js');
+
+import './popup.scss';
 
 @Component({
     props: ['options'],
@@ -22,12 +24,11 @@ export class Popup extends Vue {
         this.setHTMLScollerYHidden(true);
 
         this.$nextTick(() => {
-            _self.swiper = new Swiper('.' + _self.classContainer, {
+            _self.swiper = new Swiper(_self.$refs.mySwiper, {
                 direction: 'vertical',
                 slidesPerView: 'auto',
                 freeMode: true,
                 autoHeight: true,
-                //scrollbar:'.swiper-scrollbar',
                 scrollbar: {
                     el: '.swiper-scrollbar',
                 },
